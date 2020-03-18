@@ -10,20 +10,20 @@ export default class Direccion{
      * @param {string} municipio 
      */
     constructor(calle, numeroExterior, numeroInterior, colonia, codigoPostal, ciudad, municipio){
-        this.calles = calle
-        this.numerosExterior = numeroExterior
-        this.numerosInterior = numeroInterior
-        this.colonias = colonia
-        this.codigosPostal = codigoPostal
-        this.ciudades = ciudad
-        this.municipios = municipio
+        this._calles = calle
+        this._numerosExterior = numeroExterior
+        this._numerosInterior = numeroInterior
+        this._colonias = colonia
+        this._codigosPostal = codigoPostal
+        this._ciudades = ciudad
+        this._municipios = municipio
 
         console.log(`Objeto Inicializado`)
     }
     getFormatoCorto(){
-        return `${this.calles} ${this.numerosExterior}`
+        return `${this._calles} ${this._numerosExterior}`
     }
     getFormatoExtendido(){
-        return `${this.calles} ${this.numerosExterior} ${this.numerosInterior} ${this.colonias} ${this.codigosPostal} ${this.ciudades} ${this.municipios}`
+        return `${this._calles} ${this._numerosExterior} ${this._numerosInterior} ${this._colonias} ${this._codigosPostal} ${this._ciudades} ${this._municipios}`
     }
 }
